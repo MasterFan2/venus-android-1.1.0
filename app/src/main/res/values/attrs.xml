@@ -1,0 +1,646 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- SegmentControl  -->
+    <declare-styleable name="SegmentControl">
+        <attr name="cornerRadius" format="dimension|reference" />
+        <attr name="colors" format="color|reference" />
+        <attr name="texts" format="string|reference" />
+        <attr name="android:textSize" />
+        <attr name="direction" format="enum">
+            <enum name="horizon" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="gaps" format="dimension|reference" />
+        <attr name="horizonGap" format="dimension|reference" />
+        <attr name="verticalGap" format="dimension|reference" />
+    </declare-styleable>
+
+    <!-- MaterialRippleLayout  -->
+    <declare-styleable name="MaterialRippleLayout">
+        <attr name="mr_rippleColor" format="color" localization="suggested" />
+        <attr name="rippleDimension" format="dimension" localization="suggested" />
+        <attr name="rippleOverlay" format="boolean" localization="suggested" />
+        <attr name="rippleAlpha" format="float" localization="suggested" />
+        <attr name="rippleDuration" format="integer" localization="suggested" />
+        <attr name="rippleFadeDuration" format="integer" localization="suggested" />
+        <attr name="rippleHover" format="boolean" localization="suggested" />
+        <attr name="rippleBackground" format="color" localization="suggested" />
+        <attr name="rippleDelayClick" format="boolean" localization="suggested" />
+        <attr name="ripplePersistent" format="boolean" localization="suggested" />
+        <attr name="rippleInAdapter" format="boolean" localization="suggested" />
+    </declare-styleable>
+
+    <!-- CircleImageView  -->
+    <declare-styleable name="CircleImageView">
+        <attr name="border_width" format="dimension" />
+        <attr name="border_color" format="color" />
+        <attr name="border_overlay" format="boolean" />
+    </declare-styleable>
+
+    <!-- Refresh  -->
+    <declare-styleable name="PullRefreshLayout">
+        <attr name="type" format="enum">
+            <enum name="material" value="0" />
+            <enum name="circles" value="1" />
+            <enum name="water_drop" value="2" />
+            <enum name="ring" value="3" />
+        </attr>
+        <attr name="colorses" format="reference" />
+    </declare-styleable>
+
+    <!-- start Progress -->
+    <attr name="pv_progressMode" format="integer">
+        <enum name="determinate" value="0x00000000" />
+        <enum name="indeterminate" value="0x00000001" />
+        <enum name="buffer" value="0x00000002" />
+        <enum name="query" value="0x00000003" />
+    </attr>
+
+    <attr name="pv_progress" format="float" />
+    <attr name="pv_secondaryProgress" format="float" />
+
+    <attr name="rd_style" format="reference" />
+    <attr name="rd_enable" format="boolean" />
+
+    <declare-styleable name="CircularProgressDrawable">
+        <attr name="cpd_padding" format="reference|dimension" />
+        <attr name="cpd_initialAngle" format="reference|integer" />
+        <attr name="cpd_maxSweepAngle" format="reference|integer" />
+        <attr name="cpd_minSweepAngle" format="reference|integer" />
+        <attr name="cpd_strokeSize" format="reference|dimension" />
+        <attr name="cpd_strokeColor" format="reference|color" />
+        <attr name="cpd_strokeSecondaryColor" format="reference|color" />
+        <attr name="cpd_strokeColors" format="reference" />
+        <attr name="cpd_reverse" format="boolean" />
+        <attr name="cpd_rotateDuration" format="reference|integer" />
+        <attr name="cpd_transformDuration" format="reference|integer" />
+        <attr name="cpd_keepDuration" format="reference|integer" />
+        <attr name="cpd_transformInterpolator" format="reference" />
+        <attr name="cpd_inAnimDuration" format="reference|integer" />
+        <attr name="cpd_outAnimDuration" format="reference|integer" />
+        <attr name="cpd_inStepColors" format="reference" />
+        <attr name="cpd_inStepPercent" format="float" />
+        <attr name="pv_progressMode" />
+        <attr name="pv_progress" />
+        <attr name="pv_secondaryProgress" />
+    </declare-styleable>
+
+    <declare-styleable name="LinearProgressDrawable">
+        <attr name="lpd_maxLineWidth" format="reference|dimension|fraction" />
+        <attr name="lpd_minLineWidth" format="reference|dimension|fraction" />
+        <attr name="lpd_strokeSize" format="reference|dimension" />
+        <attr name="lpd_strokeColor" format="reference|color" />
+        <attr name="lpd_strokeSecondaryColor" format="reference|color" />
+        <attr name="lpd_strokeColors" format="reference" />
+        <attr name="lpd_reverse" format="boolean" />
+        <attr name="lpd_travelDuration" format="reference|integer" />
+        <attr name="lpd_transformDuration" format="reference|integer" />
+        <attr name="lpd_keepDuration" format="reference|integer" />
+        <attr name="lpd_transformInterpolator" format="reference" />
+        <attr name="lpd_inAnimDuration" format="reference|integer" />
+        <attr name="lpd_outAnimDuration" format="reference|integer" />
+        <attr name="lpd_verticalAlign" format="integer">
+            <enum name="top" value="0x00000000" />
+            <enum name="center" value="0x00000001" />
+            <enum name="bottom" value="0x00000002" />
+        </attr>
+        <attr name="pv_progressMode" />
+        <attr name="pv_progress" />
+        <attr name="pv_secondaryProgress" />
+    </declare-styleable>
+
+    <declare-styleable name="ProgressView">
+        <attr name="pv_autostart" format="boolean" />
+        <attr name="pv_circular" format="boolean" />
+        <attr name="pv_progressStyle" format="reference" />
+        <attr name="pv_progressMode" />
+        <attr name="pv_progress" />
+        <attr name="pv_secondaryProgress" />
+    </declare-styleable>
+    <!-- end Progress -->
+
+    <!-- listview -->
+    <declare-styleable name="MasterListView">
+        <attr name="header_layout" format="reference"></attr>
+        <attr name="header_progress_id" format="integer" />
+        <attr name="header_hint_text_id" format="integer" />
+        <attr name="header_content_id" format="integer" />
+        <attr name="header_refreshtime_id" format="integer" />
+    </declare-styleable>
+    <!-- end listview -->
+
+    <!-- progress -->
+    <declare-styleable name="MasterProgress">
+        <attr name="text" format="string" />
+        <attr name="textColor" format="color" />
+        <attr name="textSize" format="dimension" />
+        <attr name="barColor" format="color" />
+        <attr name="rimColor" format="color" />
+        <attr name="rimWidth" format="dimension" />
+        <attr name="spinSpeed" format="dimension" />
+        <attr name="delayMillis" format="integer" />
+        <attr name="circleColor" format="color" />
+        <attr name="radius" format="dimension" />
+        <attr name="barWidth" format="dimension" />
+        <attr name="barLen" format="dimension" />
+    </declare-styleable>
+    <!-- end progress -->
+
+    <!-- common -->
+
+    <declare-styleable name="RippleView">
+        <attr name="rd_style" />
+        <attr name="rd_enable" />
+    </declare-styleable>
+
+    <declare-styleable name="RippleDrawable">
+        <attr name="rd_backgroundColor" format="reference|color" />
+        <attr name="rd_backgroundAnimDuration" format="reference|integer" />
+        <attr name="rd_maxRippleRadius" format="reference|dimension|integer">
+            <enum name="match_view" value="0x00000000" />
+        </attr>
+        <attr name="rd_rippleColor" format="reference|color" />
+        <attr name="rd_rippleAnimDuration" format="reference|integer" />
+        <attr name="rd_inInterpolator" format="reference" />
+        <attr name="rd_outInterpolator" format="reference" />
+        <attr name="rd_maskType" format="integer">
+            <enum name="rectangle" value="0x00000000" />
+            <enum name="oval" value="0x00000001" />
+        </attr>
+        <attr name="rd_rippleType" format="integer">
+            <enum name="touch" value="0x00000000" />
+            <enum name="wave" value="0x00000001" />
+        </attr>
+        <attr name="rd_cornerRadius" format="reference|dimension" />
+        <attr name="rd_topLeftCornerRadius" format="reference|dimension" />
+        <attr name="rd_topRightCornerRadius" format="reference|dimension" />
+        <attr name="rd_bottomLeftCornerRadius" format="reference|dimension" />
+        <attr name="rd_bottomRightCornerRadius" format="reference|dimension" />
+        <attr name="rd_padding" format="reference|dimension" />
+        <attr name="rd_leftPadding" format="reference|dimension" />
+        <attr name="rd_topPadding" format="reference|dimension" />
+        <attr name="rd_rightPadding" format="reference|dimension" />
+        <attr name="rd_bottomPadding" format="reference|dimension" />
+        <attr name="rd_delayClick" format="integer">
+            <enum name="none" value="0x00000000" />
+            <enum name="untilRelease" value="0x00000001" />
+            <enum name="afterRelease" value="0x00000002" />
+        </attr>
+    </declare-styleable>
+    <declare-styleable name="RadioButtonDrawable">
+        <attr name="rbd_width" format="reference|dimension" />
+        <attr name="rbd_height" format="reference|dimension" />
+        <attr name="rbd_strokeSize" format="reference|dimension" />
+        <attr name="rbd_radius" format="reference|dimension" />
+        <attr name="rbd_innerRadius" format="reference|dimension" />
+        <attr name="rbd_strokeColor" format="reference|color" />
+        <attr name="rbd_animDuration" format="reference|integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckBoxDrawable">
+        <attr name="cbd_width" format="reference|dimension" />
+        <attr name="cbd_height" format="reference|dimension" />
+        <attr name="cbd_boxSize" format="reference|dimension" />
+        <attr name="cbd_cornerRadius" format="reference|dimension" />
+        <attr name="cbd_strokeSize" format="reference|dimension" />
+        <attr name="cbd_strokeColor" format="reference|color" />
+        <attr name="cbd_tickColor" format="reference|color" />
+        <attr name="cbd_animDuration" format="reference|integer" />
+    </declare-styleable>
+
+    <declare-styleable name="Switch">
+        <attr name="sw_trackSize" format="reference|dimension" />
+        <attr name="sw_trackColor" format="reference|color" />
+        <attr name="sw_trackCap" format="integer">
+            <enum name="butt" value="0x00000000" />
+            <enum name="round" value="0x00000001" />
+            <enum name="square" value="0x00000002" />
+        </attr>
+        <attr name="sw_thumbColor" format="reference|color" />
+        <attr name="sw_thumbRadius" format="reference|dimension" />
+        <attr name="sw_thumbElevation" format="reference|dimension" />
+        <attr name="sw_animDuration" format="reference|integer" />
+        <attr name="sw_interpolator" format="reference" />
+        <attr name="android:gravity" />
+        <attr name="android:checked" />
+    </declare-styleable>
+
+    <declare-styleable name="MTEditText"><!-- master edittext -->
+
+        <attr name="mt_inputId" format="reference" />
+        <attr name="mt_hintText" format="reference|string" />
+
+        <attr name="mt_dividerColor" format="reference|color" />
+        <attr name="mt_dividerHeight" format="reference|dimension" />
+        <attr name="mt_dividerPadding" format="reference|dimension" />
+
+        <attr name="mt_password" format="boolean" />
+
+        <attr name="mt_labelText" format="reference|string" />
+        <attr name="mt_labelTextColor" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="EditText">
+        <attr name="et_inputId" format="reference" />
+        <attr name="et_labelEnable" format="boolean" />
+        <attr name="et_labelPadding" format="reference|dimension" />
+        <attr name="et_labelTextSize" format="reference|dimension" />
+        <attr name="et_labelTextColor" format="reference|color" />
+        <attr name="et_labelTextAppearance" format="reference" />
+        <attr name="et_labelEllipsize" format="integer">
+            <enum name="start" value="0x00000001" />
+            <enum name="middle" value="0x00000002" />
+            <enum name="end" value="0x00000003" />
+            <enum name="marquee" value="0x00000004" />
+        </attr>
+        <attr name="et_labelInAnim" format="reference" />
+        <attr name="et_labelOutAnim" format="reference" />
+        <attr name="et_supportMode" format="integer">
+            <enum name="none" value="0x00000000" />
+            <enum name="helper" value="0x00000001" />
+            <enum name="helperWithError" value="0x00000002" />
+            <enum name="charCounter" value="0x00000003" />
+        </attr>
+        <attr name="et_supportMaxChars" format="reference|integer" />
+        <attr name="et_helper" format="reference|string" />
+        <attr name="et_error" format="reference|string" />
+        <attr name="et_supportPadding" format="reference|dimension" />
+        <attr name="et_supportTextSize" format="reference|dimension" />
+        <attr name="et_supportTextColor" format="reference|color" />
+        <attr name="et_supportTextErrorColor" format="reference|color" />
+        <attr name="et_supportTextAppearance" format="reference" />
+        <attr name="et_supportSingleLine" format="boolean" />
+        <attr name="et_supportMaxLines" format="reference|integer" />
+        <attr name="et_supportLines" format="reference|integer" />
+        <attr name="et_supportEllipsize" format="integer">
+            <enum name="start" value="0x00000001" />
+            <enum name="middle" value="0x00000002" />
+            <enum name="end" value="0x00000003" />
+            <enum name="marquee" value="0x00000004" />
+        </attr>
+        <attr name="et_dividerColor" format="reference|color" />
+        <attr name="et_dividerErrorColor" format="reference|color" />
+        <attr name="et_dividerHeight" format="reference|dimension" />
+        <attr name="et_dividerPadding" format="reference|dimension" />
+        <attr name="et_dividerAnimDuration" format="reference|integer" />
+        <attr name="et_dividerCompoundPadding" format="boolean" />
+        <attr name="et_autoCompleteMode" format="integer">
+            <enum name="none" value="0" />
+            <enum name="single" value="1" />
+            <enum name="multi" value="2" />
+        </attr>
+    </declare-styleable>
+    <!-- end common -->
+
+    <!-- title View -->
+    <declare-styleable name="MasterTitleView">
+        <attr name="titleText" format="string" />
+        <attr name="titleTxtColor" format="color" />
+        <attr name="titleBackgroundColor" format="color" />
+        <attr name="titleBackground" format="reference" />
+        <attr name="leftButtonText" format="string" />
+        <attr name="leftButtonColor" format="color" />
+        <attr name="leftButtonHide" format="boolean" />
+        <attr name="leftButtonResource" format="reference" />
+        <attr name="rightButtonText" format="string" />
+        <attr name="rightButtonHide" format="boolean" />
+        <!--<attr name="rightButtonVisiblity">-->
+        <!--<enum name="Visible" value="0" />-->
+        <!--<enum name="InVisible" value="1" />-->
+        <!--</attr>-->
+        <!--<attr name="leftButtonBackground" format="color|reference" />-->
+        <attr name="rightButtonBackground" format="color|reference" />
+        <!--<attr name=""-->
+    </declare-styleable>
+    <!-- end title View -->
+
+
+    <!-- scrollView about -->
+    <declare-styleable name="BezelImageView">
+        <attr name="maskDrawable" format="reference" />
+        <attr name="borderDrawable" format="reference" />
+        <attr name="desaturateOnPress" format="boolean" />
+    </declare-styleable>
+    <!-- end scrollView about -->
+
+
+    <!-- dragger -->
+    <declare-styleable name="dragger_layout">
+        <attr name="drag_view_id" format="reference" />
+        <attr name="shadow_view_id" format="reference" />
+        <attr name="drag_limit" format="float" />
+
+        <attr name="drag_position" format="enum">
+            <enum name="left" value="0" />
+            <enum name="right" value="1" />
+            <enum name="top" value="2" />
+            <enum name="bottom" value="3" />
+        </attr>
+    </declare-styleable>
+    <!-- end dragger -->
+
+    <!-- Multipager -->
+    <declare-styleable name="MultiViewPager">
+        <!-- Child view inside a page to match the page size against. -->
+        <attr name="matchChildWidth" format="reference" />
+        <!-- Maximum size. -->
+        <attr name="android:maxWidth" />
+        <!-- Maximum size. -->
+        <attr name="android:maxHeight" />
+    </declare-styleable>
+    <!-- end Multipager -->
+
+    <!-- calendar -->
+    <declare-styleable name="MaterialCalendarView">
+
+        <attr name="mcv_dateTextAppearance" format="reference" />
+        <attr name="mcv_weekDayTextAppearance" format="reference" />
+        <attr name="mcv_headerTextAppearance" format="reference" />
+
+        <attr name="mcv_arrowColor" format="color" />
+        <attr name="mcv_selectionColor" format="color" />
+
+        <attr name="mcv_showOtherDates" format="boolean" />
+
+        <attr name="mcv_weekDayLabels" format="reference" />
+        <attr name="mcv_monthLabels" format="reference" />
+
+        <attr name="mcv_tileSize" format="dimension" />
+
+        <attr name="mcv_firstDayOfWeek" format="enum">
+            <enum name="sunday" value="1" />
+            <enum name="monday" value="2" />
+            <enum name="tuesday" value="3" />
+            <enum name="wednesday" value="4" />
+            <enum name="thursday" value="5" />
+            <enum name="friday" value="6" />
+            <enum name="saturday" value="7" />
+        </attr>
+    </declare-styleable>
+    <!-- end Calendar -->
+
+
+    <!-- MaterialNavigationDrawer -->
+    <declare-styleable name="MaterialSection">
+        <attr name="sectionColorIcon" format="color" />
+        <attr name="sectionColorText" format="color" />
+        <attr name="sectionColorNotification" format="color" />
+        <attr name="sectionBackgroundColorPressed" format="color" />
+        <attr name="sectionBackgroundColorSelected" format="color" />
+        <attr name="sectionBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialNavigationDrawer">
+        <attr name="rippleBackport" format="boolean" />
+        <!-- supporto del ripple nelle versioni precedenti di android -->
+        <attr name="drawerType" format="integer" />
+        <!-- Tipologia del drawer -->
+        <attr name="uniqueToolbarColor" format="boolean" />
+        <!-- La toolbar non cambia mai di colore -->
+        <attr name="singleAccount" format="boolean" />
+        <!-- utente singolo (senza pulsante di cambio) -->
+        <attr name="multipaneSupport" format="boolean" />
+        <attr name="drawerColor" format="color" />
+        <!-- Colore del drawer -->
+        <attr name="sectionStyle" format="reference" />
+        <attr name="subheaderStyle" format="reference" />
+        <attr name="accountStyle" format="reference" />
+        <attr name="learningPattern" format="boolean" />
+        <!-- true -> attivo, false -> disattivato -->
+        <attr name="defaultSectionLoaded" format="integer" />
+        <!-- la prima section ad essere caricata -->
+        <attr name="toolbarElevation" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialSubheader">
+        <attr name="subheaderTitleColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="MaterialAccount">
+        <attr name="titleColor" format="color" />
+        <attr name="subtitleColor" format="color" />
+    </declare-styleable>
+    <!-- end  MaterialNavigationDrawer -->
+
+    <!-- suit detail -->
+    <declare-styleable name="DragTopLayout">
+
+        <!--Set the collapse panel offset-->
+        <attr name="dtlCollapseOffset" format="dimension"/>
+
+        <!--Set enable drag over.The default value is true.-->
+        <attr name="dtlOverDrag" format="boolean"/>
+
+        <!--Open the top view after the drag name_personal_center_prefix is created. The default value is false.-->
+        <attr name="dtlOpen" format="boolean"/>
+
+        <!-- The id of the top view (which will be dragged) -->
+        <attr name="dtlTopView" format="reference" />
+
+        <!-- The content view which will be dragged together with "dtlTopView" -->
+        <attr name="dtlDragContentView" format="reference" />
+
+        <!-- True the top view can be dragged -->
+        <attr name="dtlCaptureTop" format="boolean" />
+    </declare-styleable>
+
+
+    <!--ProcessButton-->
+    <declare-styleable name="ProcessButton">
+        <attr name="pb_textProgress" format="string" />
+        <attr name="pb_textComplete" format="string" />
+        <attr name="pb_textError" format="string" />
+        <attr name="pb_colorProgress" format="color" />
+        <attr name="pb_colorComplete" format="color" />
+        <attr name="pb_colorError" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="FlatButton">
+        <attr name="pb_colorPressed" format="color" />
+        <attr name="pb_colorNormal" format="color" />
+        <attr name="pb_cornerRadius" format="dimension" />
+    </declare-styleable>
+
+    <!-- velocimeter -->
+    <declare-styleable name="VelocimeterView">
+        <attr name="inside_progress_color"
+            format="color"/>
+        <attr name="external_progress_color"
+            format="color"/>
+        <attr name="progress_blur_color"
+            format="color"/>
+        <attr name="bottom_velocimeter_color"
+            format="color"/>
+        <attr name="internal_velocimeter_color"
+            format="color"/>
+        <attr name="needle_color"
+            format="color"/>
+        <attr name="needle_blur_color"
+            format="color"/>
+        <attr name="digital_number_color"
+            format="color"/>
+        <attr name="digital_number_blur_color"
+            format="color"/>
+        <attr name="max"
+            format="integer"/>
+        <attr name="units"
+            format="string"/>
+        <attr name="show_bottom_bar"
+            format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="FloatingActionButton">
+        <attr name="fab_colorPressed" format="color" />
+        <attr name="fab_colorNormal" format="color" />
+        <attr name="fab_colorRipple" format="color" />
+        <attr name="fab_colorDisabled" format="color" />
+        <attr name="fab_shadow" format="boolean" />
+        <attr name="fab_type" format="enum">
+            <enum name="normal" value="0" />
+            <enum name="mini" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <!-- recyclerViewpater -->
+    <declare-styleable name="RecyclerViewPager">
+        <attr name="triggerOffset" format="float" />
+        <attr name="flingFactor" format="float" />
+    </declare-styleable><!-- end recyclerViewpater -->
+
+    <!-- CircleIndicator -->
+    <declare-styleable name="CircleIndicator">
+        <attr name="ci_width" format="dimension"/>
+        <attr name="ci_height" format="dimension"/>
+        <attr name="ci_margin" format="dimension"/>
+        <attr name="ci_animator" format="reference"/>
+        <attr name="ci_animator_reverse" format="reference"/>
+        <attr name="ci_drawable" format="reference"/>
+        <attr name="ci_drawable_unselected" format="reference"/>
+    </declare-styleable><!-- end CircleIndicator -->
+
+    <!-- scaleImageView -->
+    <declare-styleable name="SubsamplingScaleImageView">
+        <attr name="src" format="reference"/>
+        <attr name="assetName" format="string"/>
+        <attr name="panEnabled" format="boolean"/>
+        <attr name="zoomEnabled" format="boolean"/>
+        <attr name="quickScaleEnabled" format="boolean"/>
+        <attr name="tileBackgroundColor" format="color"/>
+    </declare-styleable>
+
+    <!--expandableLayout-->
+    <declare-styleable name="expandableLayout">
+        <attr name="ael_duration" format="integer" />
+        <attr name="ael_expanded" format="boolean" />
+        <attr name="ael_orientation" format="enum">
+            <enum name="horizontal" value="0" />
+            <enum name="vertical" value="1" />
+        </attr>
+        <attr name="ael_interpolator" format="enum">
+            <enum name="accelerateDecelerate" value="0" />
+            <enum name="accelerate" value="1" />
+            <enum name="anticipate" value="2" />
+            <enum name="anticipateOvershoot" value="3" />
+            <enum name="bounce" value="4" />
+            <enum name="decelerate" value="5" />
+            <enum name="fastOutLinearIn" value="6" />
+            <enum name="fastOutSlowIn" value="7" />
+            <enum name="linear" value="8" />
+            <enum name="linearOutSlowIn" value="9" />
+            <enum name="overshoot" value="10" />
+        </attr>
+    </declare-styleable>
+
+    <!-- xRecyclerView -->
+    <declare-styleable name="AVLoadingIndicatorView">
+        <attr name="indicator">
+            <flag name="BallPulse" value="0"/>
+            <flag name="BallGridPulse" value="1"/>
+            <flag name="BallClipRotate" value="2"/>
+            <flag name="BallClipRotatePulse" value="3"/>
+            <flag name="SquareSpin" value="4"/>
+            <flag name="BallClipRotateMultiple" value="5"/>
+            <flag name="BallPulseRise" value="6"/>
+            <flag name="BallRotate" value="7"/>
+            <flag name="CubeTransition" value="8"/>
+            <flag name="BallZigZag" value="9"/>
+            <flag name="BallZigZagDeflect" value="10"/>
+            <flag name="BallTrianglePath" value="11"/>
+            <flag name="BallScale" value="12"/>
+            <flag name="LineScale" value="13"/>
+            <flag name="LineScaleParty" value="14"/>
+            <flag name="BallScaleMultiple" value="15"/>
+            <flag name="BallPulseSync" value="16"/>
+            <flag name="BallBeat" value="17"/>
+            <flag name="LineScalePulseOut" value="18"/>
+            <flag name="LineScalePulseOutRapid" value="19"/>
+            <flag name="BallScaleRipple" value="20"/>
+            <flag name="BallScaleRippleMultiple" value="21"/>
+            <flag name="BallSpinFadeLoader" value="22"/>
+            <flag name="LineSpinFadeLoader" value="23"/>
+            <flag name="TriangleSkewSpin" value="24"/>
+            <flag name="Pacman" value="25"/>
+            <flag name="BallGridBeat" value="26"/>
+            <flag name="SemiCircleSpin" value="27"/>
+        </attr>
+        <attr name="indicator_color" format="color"/>
+    </declare-styleable>
+
+    <!--SmartTabLayout-->
+    <declare-styleable name="stl_SmartTabLayout">
+        <attr name="stl_indicatorAlwaysInCenter" format="boolean"/>
+        <attr name="stl_indicatorWithoutPadding" format="boolean"/>
+        <attr name="stl_indicatorInFront" format="boolean"/>
+        <attr name="stl_indicatorInterpolation" format="enum">
+            <enum name="smart" value="0"/>
+            <enum name="linear" value="1"/>
+        </attr>
+        <attr name="stl_indicatorGravity" format="enum">
+            <enum name="bottom" value="0"/>
+            <enum name="top" value="1"/>
+            <enum name="center" value="2"/>
+        </attr>
+        <attr name="stl_indicatorColor" format="color"/>
+        <attr name="stl_indicatorColors" format="reference"/>
+        <attr name="stl_indicatorThickness" format="dimension"/>
+        <attr name="stl_indicatorCornerRadius" format="dimension"/>
+        <attr name="stl_overlineColor" format="color"/>
+        <attr name="stl_overlineThickness" format="dimension"/>
+        <attr name="stl_underlineColor" format="color"/>
+        <attr name="stl_underlineThickness" format="dimension"/>
+        <attr name="stl_dividerColor" format="color"/>
+        <attr name="stl_dividerColors" format="reference"/>
+        <attr name="stl_dividerThickness" format="dimension"/>
+        <attr name="stl_defaultTabBackground" format="reference"/>
+        <attr name="stl_defaultTabTextAllCaps" format="boolean"/>
+        <attr name="stl_defaultTabTextColor" format="color|reference"/>
+        <attr name="stl_defaultTabTextSize" format="dimension"/>
+        <attr name="stl_defaultTabTextHorizontalPadding" format="dimension"/>
+        <attr name="stl_defaultTabTextMinWidth" format="dimension"/>
+        <attr name="stl_customTabTextLayoutId" format="reference"/>
+        <attr name="stl_customTabTextViewId" format="reference"/>
+        <attr name="stl_distributeEvenly" format="boolean"/>
+        <attr name="stl_clickable" format="boolean"/>
+        <attr name="stl_titleOffset" format="dimension">
+            <enum name="auto_center" value="-1"/>
+        </attr>
+        <attr name="stl_drawDecorationAfterTab" format="boolean"/>
+    </declare-styleable>
+
+    <!-- FabToolbar -->
+    <declare-styleable name="FabToolbar">
+        <attr name="tb_color" format="color"/>
+        <attr name="tb_anim_duration" format="integer"/>
+        <attr name="tb_button_gravity" format="enum">
+            <enum name="start" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="end" value="2"/>
+        </attr>
+        <attr name="tb_container_gravity" format="enum">
+            <enum name="start" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="end" value="2"/>
+        </attr>
+    </declare-styleable>
+</resources>

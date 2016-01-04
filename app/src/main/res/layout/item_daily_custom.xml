@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <FrameLayout
+        android:id="@+id/vg_cover"
+        android:layout_width="300dp"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/base_white_color"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pager_name_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="张娉婷 @ 张鹏"
+                android:textColor="@color/gray_900"
+                android:textSize="24sp" />
+
+            <TextView
+                android:id="@+id/pager_place_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="拍摄地点:石象湖 | 点击量:234567"
+                android:textSize="16sp" />
+
+            <ImageView
+                android:id="@+id/pager_img"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_marginTop="16dp"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+    </FrameLayout>
+
+</RelativeLayout>

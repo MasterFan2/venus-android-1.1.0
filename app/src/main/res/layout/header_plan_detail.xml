@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="作品诠释"
+            android:textColor="@color/gray_900"
+            android:textSize="16sp"
+            />
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="0.15dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/gray_800"
+            />
+
+        <TextView
+            android:id="@+id/header_plan_desc_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="主题属性"
+            android:textColor="@color/gray_900"
+            android:textSize="16sp"
+
+            />
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="0.15dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/gray_800"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主题:"
+                android:textColor="@color/gray_500"
+                />
+
+            <TextView
+                android:id="@+id/header_plan_theme_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/gray_500"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="风格:"
+                android:textColor="@color/gray_500"
+                />
+
+            <TextView
+                android:id="@+id/header_plan_style_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/gray_500"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="色系:"
+                android:textColor="@color/gray_500"
+                />
+
+            <TextView
+                android:id="@+id/header_plan_colour_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="-"
+                android:textColor="@color/gray_500"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="场地信息"
+            android:textColor="@color/gray_900"
+            android:visibility="gone"
+            android:textSize="16sp"
+            />
+
+        <View
+            android:layout_width="80dp"
+            android:layout_height="0.15dp"
+            android:layout_marginBottom="2dp"
+            android:visibility="gone"
+            android:layout_marginTop="3dp"
+            android:background="@color/gray_800"
+            />
+
+        <TextView
+            android:id="@+id/header_plan_hotel_txt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:text="-"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="价格"
+            android:textColor="@color/gray_900"
+            android:textSize="16sp"
+            />
+
+        <View
+            android:layout_width="50dp"
+            android:layout_height="0.15dp"
+            android:layout_marginBottom="2dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/gray_800"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="折后价:￥"
+                />
+
+            <TextView
+                android:id="@+id/header_plan_newPrice_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0元"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:text="原价:￥"
+                />
+
+            <TextView
+                android:id="@+id/header_plan_oldPrice_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0元"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="场景布置费用:￥"
+                />
+
+            <TextView
+                android:id="@+id/header_plan_scen_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:id="@+id/header_plan_f4_pre_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="婚礼人(-)费用:￥"
+                />
+            <TextView
+                android:id="@+id/header_plan_f4price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="现场欣赏"
+            android:textColor="@color/gray_900"
+            android:textSize="16sp"
+            />
+        <View
+            android:layout_width="80dp"
+            android:layout_height="0.15dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="3dp"
+            android:background="@color/gray_800"
+            />
+    </LinearLayout>
+</LinearLayout>

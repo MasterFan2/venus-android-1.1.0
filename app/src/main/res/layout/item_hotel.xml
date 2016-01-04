@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/item_white_gray_bg"
+    android:orientation="horizontal"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:weightSum="2">
+
+        <ImageView
+            android:id="@+id/item_hotel_img"
+            android:layout_width="0dp"
+            android:layout_height="110dp"
+            android:layout_weight="0.9"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/load_error"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/img"
+            android:layout_weight="1.1"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:id="@+id/item_hotel_gift_disccount_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    >
+                    <ImageView
+                        android:id="@+id/item_hotel_disccount_ic_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_discount"
+                        />
+                    <ImageView
+                        android:id="@+id/item_hotel_gift_ic_img"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@mipmap/ic_gift"
+                        />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/item_hotel_name_txt"
+                    android:layout_toLeftOf="@id/item_hotel_gift_disccount_layout"
+                    android:layout_alignParentLeft="true"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="left"
+                    android:singleLine="true"
+                    android:text="-"
+                    android:ellipsize="end"
+                    android:textColor="@color/gray_900"
+                    android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/item_hotel_type_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="AAAAAAAAAAAA"
+                android:textColor="@color/gray_600"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/item_hotel_table_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="桌数:0个宴会厅，容纳0桌"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/item_hotel_addr_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:maxLines="3"
+                android:text="位置:--"
+                android:textSize="12sp"/>
+
+            <com.tool.widget.typeface.TypefacedTextView
+                android:id="@+id/item_hotel_price_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:singleLine="true"
+                android:text="￥1599 - 2899"
+                android:textColor="@color/filter_red_txt"
+                android:textSize="16sp"
+                app:typeface="fonts/Roboto-Light.ttf"
+                />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

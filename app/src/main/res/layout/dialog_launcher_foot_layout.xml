@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_foot_background"
+    android:orientation="horizontal"
+    android:paddingBottom="@dimen/activity_horizontal_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:gravity="right"
+    android:paddingTop="@dimen/activity_horizontal_margin">
+
+    <com.tool.widget.common.Button
+        android:id="@+id/footer_upgrade_cancel_button"
+        style="@style/FlatButtonRippleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="取  消"
+        android:textColor="@color/primary"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/button_text_size" />
+
+    <com.tool.widget.common.Button
+        android:id="@+id/footer_upgrade_upgrade_button"
+        style="@style/FlatButtonRippleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="更  新"
+        android:layout_marginLeft="16dp"
+        android:textColor="@color/primary"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:textSize="@dimen/button_text_size" />
+</LinearLayout>
+
+
+

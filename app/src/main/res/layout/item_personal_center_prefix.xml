@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_white_color">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:weightSum="8">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:background="@drawable/single_blue_round_bg"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/single_white_round_bg"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <com.tool.widget.MTextView
+                    android:id="@+id/item_personal_prefix_tag_txt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="婚纱摄影" />
+
+                <com.tool.widget.MTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="已预订成功"
+                    android:textColor="@color/gray_800" />
+
+                <com.tool.widget.MTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="距离拍摄日期还有34天"
+                    android:textSize="12sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1">
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.75dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/gray_600" />
+
+            <View
+                android:layout_width="0.75dp"
+                android:layout_height="fill_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@color/gray_600" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:orientation="vertical">
+
+            <com.tool.widget.MTextView
+                android:id="@+id/item_personal_prefix_title_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/green_enable_false"
+                android:drawableLeft="@mipmap/ic_launcher"
+                android:drawablePadding="5dp"
+                android:gravity="center|left"
+                android:paddingBottom="5dp"
+                android:paddingTop="5dp"
+                android:singleLine="true"
+                android:text="收藏的样片" />
+
+            <com.tool.widget.gridview.NoScrollGridView
+                android:id="@+id/item_personal_prefix_gridView"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:horizontalSpacing="2dp"
+                android:numColumns="2"
+                android:orientation="vertical"
+                android:verticalSpacing="2dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

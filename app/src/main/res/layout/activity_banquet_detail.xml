@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/black">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/banquet_detail_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerInside" />
+
+        <RelativeLayout
+            android:id="@+id/banquet_detail_bottom_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/banquet_detail_digit_indicator_txt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:text="1/3"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/textSize_24" />
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/banquet_detail_digit_indicator_txt">
+
+                <TableRow android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/banquet_detail_tables_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="桌数:-"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/banquet_detail_pillar_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="柱子:-"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/banquet_detail_area_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="面积:-"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginTop="8dp"
+                    android:weightSum="3">
+
+                    <TextView
+                        android:id="@+id/banquet_detail_shap_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="形状:-"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/banquet_detail_layerHeight_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="层高:-"
+                        android:textColor="@android:color/white" />
+
+                    <TextView
+                        android:id="@+id/banquet_detail_price_txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="消费:-"
+                        android:textColor="@android:color/white" />
+                </TableRow>
+            </TableLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <com.tool.widget.MasterTitleView
+        android:id="@+id/titleView"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleBackgroundColor="@color/gray_900"
+        app:titleText=""
+        app:rightButtonHide="true"
+        app:titleTxtColor="@android:color/white" />
+</RelativeLayout>

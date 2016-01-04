@@ -1,0 +1,30 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_white_color"
+    android:orientation="vertical"
+    >
+    <com.tool.widget.MasterTitleView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:titleBackgroundColor="@color/gray_900"
+        app:titleText=""
+        app:rightButtonHide="true"
+        app:titleTxtColor="@android:color/white" />
+
+    <LinearLayout
+        android:id="@+id/content_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="-2dp"
+        android:weightSum="2"
+        android:padding="16dp"
+        android:gravity="center_horizontal"
+        android:background="@mipmap/combo_bg"
+        >
+    </LinearLayout>
+</LinearLayout>

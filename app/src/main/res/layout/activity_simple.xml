@@ -1,0 +1,152 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="18dp"
+        >
+
+        <com.tool.widget.common.Switch
+            style="@style/Material.Widget.Switch"
+            android:id="@+id/simple_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            />
+
+        <com.tool.widget.common.CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/hello_world" />
+
+        <com.tool.widget.common.RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:text="@string/hello_world" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/alert_waiting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="弹窗加载数据"
+            />
+
+        <Button
+            android:id="@+id/alert_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="弹窗确定取消" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+
+        <com.tool.widget.common.Button
+            android:id="@+id/listView_test"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/FlatButtonRippleStyle"
+            android:padding="15dp"
+            android:text="MTListView" />
+
+        <com.tool.widget.common.Button
+            android:id="@+id/login_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/FlatButtonRippleStyle"
+            android:layout_marginLeft="10dp"
+            android:padding="15dp"
+            android:text="登录" />
+        <com.tool.widget.common.Button
+            android:id="@+id/register_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/FlatButtonRippleStyle"
+            android:layout_marginLeft="10dp"
+            android:padding="15dp"
+            android:text="新listView刷新" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <com.tool.widget.common.Button
+            android:id="@+id/scroll_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/FlatButtonRippleStyle"
+            android:padding="10dp"
+            android:text="滑动测试" />
+
+        <com.tool.widget.common.Button
+            android:id="@+id/viewPager_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/FlatButtonRippleStyle"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="ViewPager" />
+        <com.tool.widget.common.Button
+            android:id="@+id/recycle_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/FlatButtonRippleStyle"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="RecycleView" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        >
+        <com.tool.widget.common.Button
+            android:id="@+id/simple_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/FlatButtonRippleStyle"
+            android:padding="10dp"
+            android:text="样片列表" />
+
+        <com.tool.widget.common.Button
+            android:id="@+id/simple_detail_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/FlatButtonRippleStyle"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="样片详情" />
+        <com.tool.widget.common.Button
+            android:id="@+id/simple_calendar_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/FlatButtonRippleStyle"
+            android:padding="10dp"
+            android:layout_marginLeft="15dp"
+            android:text="日历" />
+
+
+    </LinearLayout>
+</LinearLayout>

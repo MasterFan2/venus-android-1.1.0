@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_foot_background"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        >
+        <com.tool.widget.common.Button
+            android:id="@+id/network_confirm_button"
+            style="@style/FlatButtonRippleStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="知道了"
+            android:textColor="@color/primary"
+            android:padding="8dp"
+            android:textSize="@dimen/button_text_size" />
+        <TextView
+            android:id="@+id/network_desc_txt"
+            android:layout_toLeftOf="@id/network_confirm_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="16sp"
+            android:text="您当前处于离线模式, 请连接网络."
+            />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

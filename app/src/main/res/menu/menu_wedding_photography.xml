@@ -1,0 +1,22 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <group android:checkableBehavior="single">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@mipmap/ic_launcher"
+        android:title="SimpleDraweeView"
+        />
+    <item
+        android:id="@+id/nav_viewpager"
+        android:icon="@mipmap/ic_launcher"
+        android:title="PhotoView" />
+    <item
+        android:id="@+id/nav_subsamplingScale"
+        android:icon="@mipmap/ic_launcher"
+        android:title="SubsamplingScaleImage" />
+    <item
+        android:id="@+id/nav_gifview"
+        android:icon="@mipmap/ic_launcher"
+        android:title="CustomGifView"
+        />
+    </group>
+</menu>

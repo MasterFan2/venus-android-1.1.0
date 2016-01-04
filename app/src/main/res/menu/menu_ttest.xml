@@ -1,0 +1,41 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.chinajsbn.venus.ui.photography.TTestActivity">
+
+    <item
+        android:id="@+id/simple_toolbar_ou"
+        android:orderInCategory="100"
+        android:title="@string/simple_style_ou"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/simple_toolbar_han"
+        android:orderInCategory="100"
+        android:title="@string/simple_style_han"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/simple_toolbar_chn"
+        android:orderInCategory="100"
+        android:title="@string/simple_style_chn"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/simple_toolbar_entity"
+        android:orderInCategory="100"
+        android:title="@string/simple_style_entity"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/simple_toolbar_garden"
+        android:orderInCategory="100"
+        android:title="@string/simple_style_garden"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/simple_toolbar_laser"
+        android:orderInCategory="100"
+        android:title="@string/simple_style_laser"
+        app:showAsAction="never" />
+</menu>

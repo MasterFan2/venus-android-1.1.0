@@ -1,0 +1,30 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_white_color"
+    >
+    <RelativeLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.tool.widget.TouchImageView
+            android:id="@+id/big_picture_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:scaleType="centerInside"
+            android:src="@mipmap/ic_launcher"
+            />
+        <com.tool.widget.MasterTitleView
+            android:id="@+id/titleView"
+            android:layout_alignParentTop="true"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleBackgroundColor="@color/gray_900"
+            app:rightButtonHide="true"
+            app:titleText="查看大图"
+            app:titleTxtColor="@android:color/white" />
+    </RelativeLayout>
+</RelativeLayout>

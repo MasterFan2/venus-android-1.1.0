@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="true"
+    android:fitsSystemWindows="true"
+    >
+    <com.tool.widget.dragger.DraggerView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/dragger_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:drag_view_id="@+id/drag_view"
+        app:shadow_view_id="@+id/shadow_view">
+
+        <FrameLayout
+            android:id="@+id/shadow_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:visibility="invisible"/>
+
+        <LinearLayout
+            android:id="@+id/drag_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:orientation="vertical">
+
+            <com.tool.widget.MasterTitleView
+                android:id="@+id/titleView"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                app:titleText="拖动"
+                app:titleTextColor="@android:color/white"
+                app:rightButtonHide="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:padding="26dp"
+                android:text="dragger"/>
+        </LinearLayout>
+    </com.tool.widget.dragger.DraggerView>
+</FrameLayout>

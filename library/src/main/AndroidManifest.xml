@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.chinajsbn.library" >
+
+    <!-- 权限配置 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="getui.permission.GetuiService." />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.WRITE_SMS" />
+
+    <permission
+        android:name="getui.permission.GetuiService.com.chinabafei.bafei"
+        android:protectionLevel="normal" >
+    </permission>
+
+    <application
+        android:allowBackup="true">
+        <!-- =========================地图相关======================== -->
+        <!--<service-->
+            <!--android:name="com.baidu.location.f"-->
+            <!--android:enabled="true"-->
+            <!--android:process=":remote" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.baidu.location.service_v2.2" >-->
+                <!--</action>-->
+            <!--</intent-filter>-->
+        <!--</service>-->
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="6x96NeeCNcvGlBUNN0ILNmDr" />
+        <!-- ========================= end 地图相关======================== -->
+
+
+        <!-- @@@@@@@@@@@@@@@@@@@个推配置信息开始@@@@@@@@@@@@@@@@@@ -->
+        <!-- app id信息 -->
+        <meta-data
+            android:name="PUSH_APPID"
+            android:value="TvPKifLCUQ75g3yOLaK5Y9" />
+        <meta-data
+            android:name="PUSH_APPKEY"
+            android:value="9ihx1wbR0C7rlNsZfijga4" />
+        <meta-data
+            android:name="PUSH_APPSECRET"
+            android:value="HpQSSDIPTV8SLba1XBYRi3" />
+        <meta-data
+            android:name="PUSH_GROUPID"
+            android:value="" />
+        <!-- 配置自定义Receiver   .getui.receiver.PushReceiver-->
+        <!--<receiver-->
+            <!--android:name=".receiver.PushReceiver"-->
+            <!--android:exported="false" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.igexin.sdk.action.TvPKifLCUQ75g3yOLaK5Y9" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!-- 配置SDK核心服务 -->
+        <!--<service-->
+            <!--android:name="com.igexin.sdk.PushService"-->
+            <!--android:exported="true"-->
+            <!--android:label="NotificationCenter"-->
+            <!--android:process=":pushservice" >-->
+        <!--</service>-->
+
+        <!--<receiver android:name="com.igexin.sdk.PushReceiver" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.BOOT_COMPLETED" />-->
+                <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+                <!--<action android:name="android.intent.action.USER_PRESENT" />-->
+                <!--<action android:name="com.igexin.sdk.action.refreshls" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+        <!--<receiver-->
+            <!--android:name="com.igexin.sdk.PushManagerReceiver"-->
+            <!--android:exported="false" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="com.igexin.sdk.action.pushmanager" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<activity-->
+            <!--android:name="com.igexin.sdk.PushActivity"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="false"-->
+            <!--android:process=":pushservice"-->
+            <!--android:taskAffinity="com.igexin.sdk.PushActivityTask"-->
+            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" >-->
+        <!--</activity>-->
+
+        <!--<service-->
+            <!--android:name="com.igexin.download.DownloadService"-->
+            <!--android:process=":pushservice" />-->
+
+        <!--<receiver android:name="com.igexin.download.DownloadReceiver" >-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.net.conn.CONNECTIVITY_CHANGE" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<provider-->
+            <!--android:name="com.igexin.download.DownloadProvider"-->
+            <!--android:authorities="downloads.com.chinabafei.bafei"-->
+            <!--android:process=":pushservice" />-->
+
+        <!--<activity-->
+            <!--android:name="com.igexin.getuiext.activity.GetuiExtActivity"-->
+            <!--android:configChanges="orientation|keyboard|keyboardHidden"-->
+            <!--android:excludeFromRecents="true"-->
+            <!--android:exported="false"-->
+            <!--android:process=":pushservice"-->
+            <!--android:taskAffinity="android.task.myServicetask"-->
+            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar" />-->
+
+        <!--<receiver-->
+            <!--android:name="com.igexin.getuiext.service.PayloadReceiver"-->
+            <!--android:exported="false" >-->
+            <!--<intent-filter>-->
+
+                <!--&lt;!&ndash; 这个com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4固定，不能修改 &ndash;&gt;-->
+                <!--<action android:name="com.igexin.sdk.action.7fjUl2Z3LH6xYy7NQK4ni4" />-->
+                <!--&lt;!&ndash; android:name="com.igexin.sdk.action.第三方的appId" &ndash;&gt;-->
+                <!--<action android:name="com.igexin.sdk.action.TvPKifLCUQ75g3yOLaK5Y9" />-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+        <!--<service-->
+            <!--android:name="com.igexin.getuiext.service.GetuiExtService"-->
+            <!--android:process=":pushservice" />-->
+        <!--&lt;!&ndash; @@@@@@@@@@@@@@@@@@@个推配置信息结束@@@@@@@@@@@@@@@@@@ &ndash;&gt;-->
+
+        <!--<activity-->
+            <!--android:name=".map.LocationActivity"-->
+            <!--android:label="LocationActivity" >-->
+        <!--</activity>-->
+        <!--<activity-->
+            <!--android:name=".map.BMapActivity"-->
+            <!--android:label="BMapActivity" >-->
+        <!--</activity>-->
+    </application>
+
+</manifest>

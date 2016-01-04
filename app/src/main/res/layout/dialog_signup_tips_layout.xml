@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/activity_horizontal_margin"
+    >
+    <TextView
+        android:id="@+id/signup_tips_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="8dp"
+        android:text="恭喜你，注册成功！稍后我们会将您的密码通过短信方式发送到您的手机，登录后请及时修改您的密码。"
+        />
+</LinearLayout>

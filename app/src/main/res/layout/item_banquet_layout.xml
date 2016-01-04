@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@android:color/white"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        >
+        <TextView
+            android:id="@+id/item_banquet_name_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/gray_800"
+            android:text="1F1号厅" />
+    </RelativeLayout>
+    <ImageView
+        android:id="@+id/item_banquet_content_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="centerCrop"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:weightSum="2"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/item_banquet_tables_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="@color/subtitle_gray_text_color"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="桌数:-" />
+
+        <TextView
+            android:id="@+id/item_banquet_price_txt"
+            android:layout_toRightOf="@id/item_banquet_tables_txt"
+            android:textColor="@color/subtitle_gray_text_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:text="低消:-" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:weightSum="2"
+        >
+        <TextView
+            android:id="@+id/item_banquet_pillar_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/subtitle_gray_text_color"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:text="柱子:-" />
+
+        <TextView
+            android:id="@+id/item_banquet_area_txt"
+            android:layout_toRightOf="@id/item_banquet_tables_txt"
+            android:textColor="@color/subtitle_gray_text_color"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:textSize="12sp"
+            android:text="面积:-" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="3dp"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/item_banquet_height_txt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/subtitle_gray_text_color"
+            android:layout_weight="1"
+            android:textSize="12sp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="层高:-" />
+
+        <TextView
+            android:id="@+id/item_banquet_shap_txt"
+            android:layout_toRightOf="@id/item_banquet_tables_txt"
+            android:textColor="@color/subtitle_gray_text_color"
+            android:layout_width="0dp"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:layout_weight="1"
+            android:text="形状:-" />
+    </LinearLayout>
+</LinearLayout>

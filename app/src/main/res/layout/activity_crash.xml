@@ -1,0 +1,76 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/base_white_color"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.chinajsbn.venus.ui.error.CrashActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/crash_error_image" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="哎呀, 程序好像遇到了一个问题。" />
+
+        <com.tool.widget.MaterialRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            app:rippleAlpha="0.2"
+            app:rippleColor="#585858"
+            app:rippleDelayClick="false"
+            app:rippleHover="true"
+            app:rippleOverlay="true">
+
+            <Button
+                android:id="@+id/crash_send_report_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_round_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="提交错误报告，帮助我们改进"
+                android:textColor="@android:color/white" />
+        </com.tool.widget.MaterialRippleLayout>
+
+        <com.tool.widget.MaterialRippleLayout
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            app:rippleAlpha="0.2"
+            app:rippleColor="#585858"
+            app:rippleDelayClick="false"
+            app:rippleHover="true"
+            app:rippleOverlay="true">
+
+            <Button
+                android:id="@+id/crash_restart_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/gray_round_bg"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="重新启动应用"
+                android:textColor="@android:color/white" />
+        </com.tool.widget.MaterialRippleLayout>
+    </LinearLayout>
+</RelativeLayout>

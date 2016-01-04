@@ -1,0 +1,113 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+    <!--android:id="@+id/swipe_refresh"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!-->-->
+    <!--<android.support.v7.widget.RecyclerView-->
+    <!--android:id="@+id/recyclerView"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--/>-->
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+    <com.tool.widget.mt_listview.MyListView
+        android:id="@+id/myListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:listSelector="@android:color/transparent"
+        android:padding="8dp"
+        app:header_layout="@layout/xlistview_header"
+        />
+
+    <View
+        android:id="@+id/overlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/black_alpha_30"
+        android:clickable="true"
+        android:visibility="gone"/>
+
+    <!--<TextView-->
+    <!--android:id="@+id/fab"-->
+    <!--android:layout_width="60dp"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:layout_alignParentBottom="true"-->
+    <!--android:layout_alignParentRight="true"-->
+    <!--android:layout_margin="15dp"-->
+    <!--android:text="风格"-->
+    <!--android:gravity="center"-->
+    <!--android:background="@drawable/shap_orange_round_bg"-->
+    <!--android:textColor="@color/gray_200"-->
+    <!--android:padding="15dp"-->
+    <!--android:textSize="14sp" />-->
+    <com.tool.widget.fabtoolbar.FabToolbar
+        android:id="@+id/fab_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        app:tb_button_gravity="end"
+        app:tb_container_gravity="center"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="3"
+            >
+
+            <TextView
+                android:id="@+id/all_txt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="全部"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                android:id="@+id/style_txt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="风格"
+                android:textColor="@android:color/white"
+                />
+
+            <TextView
+                android:id="@+id/place_txt"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="场景"
+                android:textColor="@android:color/white"
+                />
+        </LinearLayout>
+    </com.tool.widget.fabtoolbar.FabToolbar>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/sheet"
+        android:layout_above="@id/fab_toolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"
+        app:cardElevation="2dp">
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            />
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>
